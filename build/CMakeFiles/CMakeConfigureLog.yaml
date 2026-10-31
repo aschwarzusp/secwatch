@@ -1,0 +1,1220 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+      - "/usr/lib/llvm/22/bin/"
+      - "/bin/"
+    searched_directories:
+      - "/home/asch/.opencode/bin/uname"
+      - "/usr/local/sbin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 7.2.12-gentoo - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+      - "/usr/lib/llvm/22/bin/"
+    searched_directories:
+      - "/home/asch/.opencode/bin/gmake"
+      - "/usr/local/sbin/gmake"
+      - "/usr/local/bin/gmake"
+    found: "/usr/bin/gmake"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "CC"
+      - "g++"
+      - "aCC"
+      - "cl"
+      - "bcc"
+      - "xlC"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+      - "/usr/lib/llvm/22/bin/"
+    searched_directories:
+      - "/home/asch/.opencode/bin/c++"
+      - "/usr/local/sbin/c++"
+      - "/usr/local/bin/c++"
+      - "/usr/bin/c++"
+      - "/opt/bin/c++"
+    found: "/usr/lib/llvm/22/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake/Modules/"
+    found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/lib/llvm/22/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /tmp/secwatch/build/CMakeFiles/4.3.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar"
+      - "ar"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-strip"
+      - "strip"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld.lld"
+      - "ld"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/ld.lld"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-nm"
+      - "nm"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-dlltool"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    found: "/usr/lib/llvm/22/bin/llvm-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    searched_directories:
+      - "/usr/lib/llvm/22/bin/tapi"
+      - "/home/asch/.opencode/bin/tapi"
+      - "/usr/local/sbin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/opt/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-22.1"
+      - "llvm-ar-22"
+      - "llvm-ar22"
+      - "llvm-ar"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    searched_directories:
+      - "/usr/lib/llvm/22/bin/llvm-ar-22.1"
+      - "/home/asch/.opencode/bin/llvm-ar-22.1"
+      - "/usr/local/sbin/llvm-ar-22.1"
+      - "/usr/local/bin/llvm-ar-22.1"
+      - "/usr/bin/llvm-ar-22.1"
+      - "/opt/bin/llvm-ar-22.1"
+      - "/usr/lib/llvm/22/bin/llvm-ar-22"
+      - "/home/asch/.opencode/bin/llvm-ar-22"
+      - "/usr/local/sbin/llvm-ar-22"
+      - "/usr/local/bin/llvm-ar-22"
+      - "/usr/bin/llvm-ar-22"
+      - "/opt/bin/llvm-ar-22"
+      - "/usr/lib/llvm/22/bin/llvm-ar22"
+      - "/home/asch/.opencode/bin/llvm-ar22"
+      - "/usr/local/sbin/llvm-ar22"
+      - "/usr/local/bin/llvm-ar22"
+      - "/usr/bin/llvm-ar22"
+      - "/opt/bin/llvm-ar22"
+    found: "/usr/lib/llvm/22/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-22.1"
+      - "llvm-ranlib-22"
+      - "llvm-ranlib22"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    searched_directories:
+      - "/usr/lib/llvm/22/bin/llvm-ranlib-22.1"
+      - "/home/asch/.opencode/bin/llvm-ranlib-22.1"
+      - "/usr/local/sbin/llvm-ranlib-22.1"
+      - "/usr/local/bin/llvm-ranlib-22.1"
+      - "/usr/bin/llvm-ranlib-22.1"
+      - "/opt/bin/llvm-ranlib-22.1"
+      - "/usr/lib/llvm/22/bin/llvm-ranlib-22"
+      - "/home/asch/.opencode/bin/llvm-ranlib-22"
+      - "/usr/local/sbin/llvm-ranlib-22"
+      - "/usr/local/bin/llvm-ranlib-22"
+      - "/usr/bin/llvm-ranlib-22"
+      - "/opt/bin/llvm-ranlib-22"
+      - "/usr/lib/llvm/22/bin/llvm-ranlib22"
+      - "/home/asch/.opencode/bin/llvm-ranlib22"
+      - "/usr/local/sbin/llvm-ranlib22"
+      - "/usr/local/bin/llvm-ranlib22"
+      - "/usr/bin/llvm-ranlib22"
+      - "/opt/bin/llvm-ranlib22"
+    found: "/usr/lib/llvm/22/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-22.1"
+      - "clang-scan-deps-22"
+      - "clang-scan-deps22"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/usr/lib/llvm/22/bin/"
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+    searched_directories:
+      - "/usr/lib/llvm/22/bin/clang-scan-deps-22.1"
+      - "/home/asch/.opencode/bin/clang-scan-deps-22.1"
+      - "/usr/local/sbin/clang-scan-deps-22.1"
+      - "/usr/local/bin/clang-scan-deps-22.1"
+      - "/usr/bin/clang-scan-deps-22.1"
+      - "/opt/bin/clang-scan-deps-22.1"
+      - "/usr/lib/llvm/22/bin/clang-scan-deps-22"
+      - "/home/asch/.opencode/bin/clang-scan-deps-22"
+      - "/usr/local/sbin/clang-scan-deps-22"
+      - "/usr/local/bin/clang-scan-deps-22"
+      - "/usr/bin/clang-scan-deps-22"
+      - "/opt/bin/clang-scan-deps-22"
+      - "/usr/lib/llvm/22/bin/clang-scan-deps22"
+      - "/home/asch/.opencode/bin/clang-scan-deps22"
+      - "/usr/local/sbin/clang-scan-deps22"
+      - "/usr/local/bin/clang-scan-deps22"
+      - "/usr/bin/clang-scan-deps22"
+      - "/opt/bin/clang-scan-deps22"
+    found: "/usr/lib/llvm/22/bin/clang-scan-deps"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC"
+      binary: "/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/lib/llvm/22/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a6ec/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5a6ec.dir/build.make CMakeFiles/cmTC_5a6ec.dir/build
+        gmake[1]: Entering directory '/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC'
+        Building CXX object CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/lib/llvm/22/bin/c++   -v -MD -MT CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang version 22.1.8+libcxx
+        Target: x86_64-pc-linux-musl
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm/22/bin
+        Configuration file: /etc/clang/22/x86_64-pc-linux-musl-clang++.cfg
+        System configuration file directory: /etc/clang/22
+        User configuration file directory: /home/asch/.config/clang
+         (in-process)
+         "/usr/lib/llvm/22/bin/clang-22" -cc1 -triple x86_64-pc-linux-musl -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC -v -fcoverage-compilation-dir=/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC -resource-dir /usr/lib/llvm/22/bin/../../../../lib/clang/22 -dependency-file CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -include /usr/include/gentoo/fortify.h -include /usr/include/gentoo/maybe-stddefs.h -D _GLIBCXX_ASSERTIONS -D _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/local/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/lib/llvm/22/bin/../../../../lib/clang/22/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fstack-clash-protection -fcf-protection=none -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -load LLVMPolly.so -fpass-plugin=LLVMPolly.so -fdwarf2-cfi-asm -o CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 22.1.8+libcxx based upon LLVM 22.1.8+libcxx default target x86_64-pc-linux-musl
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/v1
+         /usr/include
+         /usr/lib/llvm/22/bin/../../../../lib/clang/22/include
+        End of search list.
+        Linking CXX executable cmTC_5a6ec
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a6ec.dir/link.txt --verbose=1
+        /usr/lib/llvm/22/bin/c++  -v -Wl,-v CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5a6ec
+        clang version 22.1.8+libcxx
+        Target: x86_64-pc-linux-musl
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm/22/bin
+        Configuration file: /etc/clang/22/x86_64-pc-linux-musl-clang++.cfg
+        System configuration file directory: /etc/clang/22
+        User configuration file directory: /home/asch/.config/clang
+         "/usr/lib/llvm/22/bin/ld.lld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib/ld-musl-x86_64.so.1 -o cmTC_5a6ec /lib/Scrt1.o /lib/crti.o /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o -L/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/x86_64-pc-linux-musl -L/lib -L/usr/lib -z relro -z now -v CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -lunwind --no-as-needed -lc /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -lunwind --no-as-needed /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o /lib/crtn.o
+        LLD 22.1.8 (compatible with GNU linkers)
+        gmake[1]: Leaving directory '/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/v1]
+          add: [/usr/include]
+          add: [/usr/lib/llvm/22/bin/../../../../lib/clang/22/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/v1] ==> [/usr/include/c++/v1]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        collapse include dir [/usr/lib/llvm/22/bin/../../../../lib/clang/22/include] ==> [/usr/lib/clang/22/include]
+        implicit include dirs: [/usr/include/c++/v1;/usr/include;/usr/lib/clang/22/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5a6ec/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_5a6ec.dir/build.make CMakeFiles/cmTC_5a6ec.dir/build]
+        ignore line: [gmake[1]: Entering directory '/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/lib/llvm/22/bin/c++   -v -MD -MT CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang version 22.1.8+libcxx]
+        ignore line: [Target: x86_64-pc-linux-musl]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm/22/bin]
+        ignore line: [Configuration file: /etc/clang/22/x86_64-pc-linux-musl-clang++.cfg]
+        ignore line: [System configuration file directory: /etc/clang/22]
+        ignore line: [User configuration file directory: /home/asch/.config/clang]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm/22/bin/clang-22" -cc1 -triple x86_64-pc-linux-musl -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC -v -fcoverage-compilation-dir=/tmp/secwatch/build/CMakeFiles/CMakeScratch/TryCompile-JoFMjC -resource-dir /usr/lib/llvm/22/bin/../../../../lib/clang/22 -dependency-file CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -include /usr/include/gentoo/fortify.h -include /usr/include/gentoo/maybe-stddefs.h -D _GLIBCXX_ASSERTIONS -D _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -internal-isystem /usr/include/c++/v1 -internal-isystem /usr/local/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -internal-isystem /usr/lib/llvm/22/bin/../../../../lib/clang/22/include -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fstack-clash-protection -fcf-protection=none -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -load LLVMPolly.so -fpass-plugin=LLVMPolly.so -fdwarf2-cfi-asm -o CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 22.1.8+libcxx based upon LLVM 22.1.8+libcxx default target x86_64-pc-linux-musl]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/v1]
+        ignore line: [ /usr/include]
+        ignore line: [ /usr/lib/llvm/22/bin/../../../../lib/clang/22/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_5a6ec]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a6ec.dir/link.txt --verbose=1]
+        ignore line: [/usr/lib/llvm/22/bin/c++  -v -Wl -v CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5a6ec]
+        ignore line: [clang version 22.1.8+libcxx]
+        ignore line: [Target: x86_64-pc-linux-musl]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm/22/bin]
+        ignore line: [Configuration file: /etc/clang/22/x86_64-pc-linux-musl-clang++.cfg]
+        ignore line: [System configuration file directory: /etc/clang/22]
+        ignore line: [User configuration file directory: /home/asch/.config/clang]
+        link line: [ "/usr/lib/llvm/22/bin/ld.lld" --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib/ld-musl-x86_64.so.1 -o cmTC_5a6ec /lib/Scrt1.o /lib/crti.o /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o -L/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/x86_64-pc-linux-musl -L/lib -L/usr/lib -z relro -z now -v CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -lunwind --no-as-needed -lc /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a --as-needed -lunwind --no-as-needed /usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o /lib/crtn.o]
+          arg [/usr/lib/llvm/22/bin/ld.lld] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-x86_64.so.1] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5a6ec] ==> ignore
+          arg [/lib/Scrt1.o] ==> obj [/lib/Scrt1.o]
+          arg [/lib/crti.o] ==> obj [/lib/crti.o]
+          arg [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o] ==> obj [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o]
+          arg [-L/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/x86_64-pc-linux-musl] ==> dir [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/x86_64-pc-linux-musl]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-zrelro] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_5a6ec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lm] ==> lib [m]
+          arg [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a]
+          arg [--as-needed] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a] ==> lib [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a]
+          arg [--as-needed] ==> ignore
+          arg [-lunwind] ==> lib [unwind]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o] ==> obj [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o]
+          arg [/lib/crtn.o] ==> obj [/lib/crtn.o]
+        linker tool for 'CXX': /usr/lib/llvm/22/bin/ld.lld
+        remove lib [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a]
+        remove lib [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a]
+        collapse obj [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o] ==> [/usr/lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o]
+        collapse obj [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o] ==> [/usr/lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o]
+        collapse library dir [/usr/lib/llvm/22/bin/../../../../lib/clang/22/lib/x86_64-pc-linux-musl] ==> [/usr/lib/clang/22/lib/x86_64-pc-linux-musl]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [c++;m;unwind;c;unwind]
+        implicit objs: [/lib/Scrt1.o;/lib/crti.o;/usr/lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o;/usr/lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o;/lib/crtn.o]
+        implicit dirs: [/usr/lib/clang/22/lib/x86_64-pc-linux-musl;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/lib/llvm/22/bin/ld.lld" "-v"
+      LLD 22.1.8 (compatible with GNU linkers)
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:517 (find_program)"
+      - "CMakeLists.txt:7 (find_package)"
+    mode: "program"
+    variable: "PKG_CONFIG_EXECUTABLE"
+    description: "pkg-config executable"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "pkg-config"
+      - "pkgconf"
+    candidate_directories:
+      - "/home/asch/.opencode/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/opt/bin/"
+      - "/usr/lib/llvm/22/bin/"
+      - "/usr/local/bin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/"
+      - "/usr/bin/"
+      - "/usr/sbin/"
+      - "/usr/"
+      - "/bin/"
+      - "/sbin/"
+      - "/usr/X11R6/bin/"
+      - "/usr/X11R6/sbin/"
+      - "/usr/X11R6/"
+      - "/usr/pkg/bin/"
+      - "/usr/pkg/sbin/"
+      - "/usr/pkg/"
+      - "/opt/bin/"
+      - "/opt/sbin/"
+      - "/opt/"
+      - "/bin/"
+    searched_directories:
+      - "/home/asch/.opencode/bin/pkg-config"
+      - "/home/asch/.opencode/bin/pkgconf"
+      - "/usr/local/sbin/pkg-config"
+      - "/usr/local/sbin/pkgconf"
+      - "/usr/local/bin/pkg-config"
+      - "/usr/local/bin/pkgconf"
+    found: "/usr/bin/pkg-config"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_PROGRAM_PATH:
+        - "/usr/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "CMakeLists.txt:8 (pkg_check_modules)"
+    mode: "library"
+    variable: "pkgcfg_lib_SDL2_SDL2"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SDL2"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libSDL2.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/x86_64-pc-linux-musl/lib//gcc"
+        - "/usr/x86_64-pc-linux-musl/lib/"
+        - "/usr/lib64"
+        - "/usr/libx32"
+        - "/usr/lib32"
+        - "/usr/lib"
+        - "/lib"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "CMakeLists.txt:9 (pkg_check_modules)"
+    mode: "library"
+    variable: "pkgcfg_lib_SDL2_TTF_SDL2_ttf"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SDL2_ttf"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libSDL2_ttf.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/x86_64-pc-linux-musl/lib//gcc"
+        - "/usr/x86_64-pc-linux-musl/lib/"
+        - "/usr/lib64"
+        - "/usr/libx32"
+        - "/usr/lib32"
+        - "/usr/lib"
+        - "/lib"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:761 (find_library)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:811 (_pkg_find_libs)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1149 (_pkg_recalculate)"
+      - "/usr/share/cmake/Modules/FindPkgConfig.cmake:1166 (_pkg_check_modules_internal)"
+      - "CMakeLists.txt:9 (pkg_check_modules)"
+    mode: "library"
+    variable: "pkgcfg_lib_SDL2_TTF_SDL2"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "SDL2"
+    candidate_directories:
+      - "/usr/lib/"
+    found: "/usr/lib/libSDL2.so"
+    search_context:
+      ENV{PATH}:
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/home/asch/.opencode/bin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/opt/bin"
+        - "/usr/lib/llvm/22/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "/usr/x86_64-pc-linux-musl/lib//gcc"
+        - "/usr/x86_64-pc-linux-musl/lib/"
+        - "/usr/lib64"
+        - "/usr/libx32"
+        - "/usr/lib32"
+        - "/usr/lib"
+        - "/lib"
+...

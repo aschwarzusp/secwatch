@@ -1,0 +1,7 @@
+/tmp/secwatch/build/CMakeFiles/secwatch.dir
+/tmp/secwatch/build/CMakeFiles/edit_cache.dir
+/tmp/secwatch/build/CMakeFiles/rebuild_cache.dir
+/tmp/secwatch/build/CMakeFiles/list_install_components.dir
+/tmp/secwatch/build/CMakeFiles/install.dir
+/tmp/secwatch/build/CMakeFiles/install/local.dir
+/tmp/secwatch/build/CMakeFiles/install/strip.dir

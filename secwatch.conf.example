@@ -1,0 +1,38 @@
+# SecWatch Configuration
+# Place in ~/.config/secwatch/ (Linux/macOS) or %APPDATA%/secwatch/ (Windows)
+
+[llm]
+# Enable/disable LLM comment generation
+llm_enabled = 1
+
+# LLM server URL (OpenAI-compatible endpoint)
+llm_url = http://127.0.0.1:8080/v1/chat/completions
+
+# Model name (must match what llama-server reports)
+llm_model = gemma-4-12b
+
+# API key (optional, required if server has --api-key)
+llm_api_key = 
+
+# Generation parameters
+llm_max_tokens = 768
+llm_temperature = 0.2
+llm_timeout_s = 180
+
+# Output constraints
+llm_max_comments = 6
+llm_max_advisories = 6
+llm_max_excerpt = 700
+
+# Grounding: strip unverified CVE/version references
+llm_strict_grounding = 1
+
+# Use JSON schema constraint (requires llama-server --json-schema support)
+llm_json_schema = 0
+
+# Local cache directory for responses
+llm_cache = 1
+# llm_cache_dir = /path/to/cache
+
+# Environment variables override config file:
+# SECWATCH_LLM_ENABLED, SECWATCH_LLM_URL, SECWATCH_LLM_MODEL, etc.
