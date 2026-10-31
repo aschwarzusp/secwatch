@@ -581,4 +581,15 @@ CMakeFiles/secwatch.dir/src/glsa.cpp.o: /tmp/secwatch/src/glsa.cpp \
   /usr/include/c++/v1/__functional/default_searcher.h \
   /usr/include/c++/v1/__functional/not_fn.h /usr/include/c++/v1/set \
   /usr/include/c++/v1/__tree \
-  /usr/include/c++/v1/__utility/lazy_synth_three_way_comparator.h
+  /usr/include/c++/v1/__utility/lazy_synth_three_way_comparator.h \
+  /usr/include/c++/v1/sstream \
+  /usr/include/c++/v1/__ostream/basic_ostream.h \
+  /usr/include/c++/v1/__ostream/put_character_sequence.h \
+  /usr/include/c++/v1/bitset \
+  /usr/include/c++/v1/__type_traits/is_char_like_type.h \
+  /usr/include/c++/v1/istream /usr/include/c++/v1/ostream \
+  /usr/include/c++/v1/format /usr/include/c++/v1/queue \
+  /usr/include/c++/v1/__algorithm/ranges_copy.h \
+  /usr/include/c++/v1/__fwd/queue.h /usr/include/c++/v1/stack \
+  /usr/include/c++/v1/__fwd/stack.h /usr/include/c++/v1/print \
+  /usr/include/unistd.h

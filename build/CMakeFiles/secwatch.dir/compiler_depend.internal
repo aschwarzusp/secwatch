@@ -6375,3 +6375,29 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o
  /usr/include/wchar.h
  /usr/include/wctype.h
 
+secwatch
+ /lib/Scrt1.o
+ /lib/crti.o
+ /lib/crtn.o
+ /lib/libSDL2.so
+ /lib/libSDL2_ttf.so
+ /lib/libc++.so
+ /lib/libc++_shared.so
+ /lib/libc++abi.so
+ /lib/libc.so
+ /lib/libcurl.so
+ /lib/libm.a
+ /lib/libunwind.so
+ /usr/lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o
+ /usr/lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o
+ /usr/lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/config.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/glsa.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/llm.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/main.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/minijson.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/pkgs.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/ui.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/util.cpp.o
+ /tmp/secwatch/build/CMakeFiles/secwatch.dir/src/vuln.cpp.o
+

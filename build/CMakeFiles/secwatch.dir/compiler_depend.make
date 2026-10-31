@@ -6366,6 +6366,57 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
   /usr/include/wchar.h \
   /usr/include/wctype.h
 
+secwatch: /lib/Scrt1.o \
+  /lib/crti.o \
+  /lib/crtn.o \
+  /lib/libSDL2.so \
+  /lib/libSDL2_ttf.so \
+  /lib/libc++.so \
+  /lib/libc++_shared.so \
+  /lib/libc++abi.so \
+  /lib/libc.so \
+  /lib/libcurl.so \
+  /lib/libm.a \
+  /lib/libunwind.so \
+  /usr/lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o \
+  /usr/lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o \
+  /usr/lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a \
+  CMakeFiles/secwatch.dir/src/config.cpp.o \
+  CMakeFiles/secwatch.dir/src/glsa.cpp.o \
+  CMakeFiles/secwatch.dir/src/llm.cpp.o \
+  CMakeFiles/secwatch.dir/src/main.cpp.o \
+  CMakeFiles/secwatch.dir/src/minijson.cpp.o \
+  CMakeFiles/secwatch.dir/src/pkgs.cpp.o \
+  CMakeFiles/secwatch.dir/src/ui.cpp.o \
+  CMakeFiles/secwatch.dir/src/util.cpp.o \
+  CMakeFiles/secwatch.dir/src/vuln.cpp.o
+
+
+CMakeFiles/secwatch.dir/src/vuln.cpp.o:
+
+CMakeFiles/secwatch.dir/src/util.cpp.o:
+
+CMakeFiles/secwatch.dir/src/pkgs.cpp.o:
+
+CMakeFiles/secwatch.dir/src/main.cpp.o:
+
+CMakeFiles/secwatch.dir/src/llm.cpp.o:
+
+CMakeFiles/secwatch.dir/src/glsa.cpp.o:
+
+CMakeFiles/secwatch.dir/src/config.cpp.o:
+
+/usr/lib/clang/22/lib/linux/clang_rt.crtbegin-x86_64.o:
+
+/lib/libunwind.so:
+
+/lib/libm.a:
+
+/lib/libSDL2_ttf.so:
+
+/lib/crtn.o:
+
+/lib/Scrt1.o:
 
 /usr/include/sys/time.h:
 
@@ -6460,6 +6511,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 /usr/lib/clang/22/include/gfniintrin.h:
 
 /usr/lib/clang/22/include/f16cintrin.h:
+
+CMakeFiles/secwatch.dir/src/minijson.cpp.o:
 
 /usr/lib/clang/22/include/enqcmdintrin.h:
 
@@ -7117,6 +7170,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 
 /usr/include/c++/v1/concepts:
 
+/usr/lib/clang/22/lib/linux/libclang_rt.builtins-x86_64.a:
+
 /usr/include/c++/v1/__concepts/same_as.h:
 
 /usr/include/c++/v1/__new/launder.h:
@@ -7168,6 +7223,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 /usr/include/c++/v1/__type_traits/decay.h:
 
 /usr/include/c++/v1/__ranges/container_compatible_range.h:
+
+/lib/libc++_shared.so:
 
 /usr/include/c++/v1/__ranges/concepts.h:
 
@@ -7397,6 +7454,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 
 /usr/include/c++/v1/__algorithm/find_segment_if.h:
 
+/usr/lib/clang/22/lib/linux/clang_rt.crtend-x86_64.o:
+
 /usr/include/c++/v1/__iterator/insert_iterator.h:
 
 /usr/include/c++/v1/__type_traits/is_floating_point.h:
@@ -7526,6 +7585,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 /usr/include/c++/v1/__algorithm/find_first_of.h:
 
 /usr/include/c++/v1/__functional/operations.h:
+
+/lib/crti.o:
 
 /usr/include/c++/v1/__functional/mem_fun_ref.h:
 
@@ -7674,6 +7735,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 /usr/lib/clang/22/include/avx512vlvnniintrin.h:
 
 /usr/include/c++/v1/sstream:
+
+/lib/libc++.so:
 
 /usr/include/c++/v1/__atomic/floating_point_helper.h:
 
@@ -7863,6 +7926,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 
 /usr/include/c++/v1/__fwd/memory_resource.h:
 
+/lib/libSDL2.so:
+
 /usr/include/c++/v1/__algorithm/unwrap_range.h:
 
 /usr/include/c++/v1/__type_traits/is_integral.h:
@@ -7949,6 +8014,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 
 /usr/include/c++/v1/__chrono/steady_clock.h:
 
+/lib/libc.so:
+
 /usr/include/c++/v1/__iterator/ostreambuf_iterator.h:
 
 /usr/lib/clang/22/include/amxavx512intrin.h:
@@ -8027,6 +8094,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 
 /usr/include/c++/v1/__math/remainder.h:
 
+CMakeFiles/secwatch.dir/src/ui.cpp.o:
+
 /usr/include/c++/v1/__algorithm/remove_copy.h:
 
 /usr/lib/clang/22/include/cetintrin.h:
@@ -8073,6 +8142,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 
 /usr/include/c++/v1/iosfwd:
 
+/lib/libcurl.so:
+
 /usr/include/c++/v1/__algorithm/generate_n.h:
 
 /usr/lib/clang/22/include/avx512cdintrin.h:
@@ -8114,6 +8185,8 @@ CMakeFiles/secwatch.dir/src/vuln.cpp.o: /tmp/secwatch/src/vuln.cpp \
 /usr/include/bits/errno.h:
 
 /usr/include/c++/v1/__utility/is_valid_range.h:
+
+/lib/libc++abi.so:
 
 /usr/include/c++/v1/__new/align_val_t.h:
 

@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <regex>
 #include <set>
+#include <sstream>
 
 namespace {
 
@@ -38,7 +39,7 @@ std::vector<std::string> GlsaScanner::affected_ids(std::string* note) {
         return ids;
     }
 
-    // Preferred form: ask glsa-check to list only affected advisories.
+    // Try the affected flag first
     int ec = 0;
     std::string raw = util::exec_capture({"glsa-check", "-l", "affected"}, &ec);
 
@@ -48,34 +49,62 @@ std::vector<std::string> GlsaScanner::affected_ids(std::string* note) {
         if (t.size() >= 9 && looks_like_glsa_id(t.substr(0, 9))) { usable = true; break; }
     }
 
-    // Fallback: full listing, keep lines that mention an affected status.
+    // Fallback: full listing
     if (!usable) {
+        std::ostringstream fallback_note;
+        if (note) {
+            *note = "glsa-check -l affected produced no parseable output; "
+                    "fell back to scanning 'glsa-check -l'";
+        }
+        
         raw = util::exec_capture({"glsa-check", "-l"}, &ec);
-        std::string filtered;
+        
+        // Check if output is just a header (no actual advisories)
+        bool only_header = true;
+        for (const auto& line : util::split(raw, '\n')) {
+            std::string t = util::trim(line);
+            if (t.size() >= 9 && looks_like_glsa_id(t.substr(0, 9))) {
+                only_header = false;
+                break;
+            }
+        }
+        
+        if (only_header && !raw.empty()) {
+            // Database might need updating
+            if (note) {
+                *note += " | Note: 'glsa-check -l' shows no advisories. "
+                         "Consider running 'emaint sync --security'";
+            }
+            return ids; // Return empty, don't fail
+        }
+        
         for (const auto& line : util::split(raw, '\n')) {
             std::string t = util::trim(line);
             if (t.size() < 9 || !looks_like_glsa_id(t.substr(0, 9))) continue;
-            std::string lower = util::lower(t);
-            if (lower.find("affected") != std::string::npos ||
-                t.find("[N]") != std::string::npos) {
-                filtered += t + "\n";
-            }
+            // Skip header/legend lines
+            if (t.find("means this GLSA") != std::string::npos) continue;
+            if (t.find("means the system") != std::string::npos) continue;
+            if (t.find("indicates that") != std::string::npos) continue;
+            if (t.find("[A]") != std::string::npos ||
+                t.find("[U]") != std::string::npos ||
+                t.find("[N]") != std::string::npos) continue;
+            std::string id = t.substr(0, 9);
+            if (!looks_like_glsa_id(id)) continue;
+            ids.push_back(id);
         }
-        raw = filtered;
-        if (note) *note = "glsa-check -l affected produced no parseable output; "
-                          "fell back to scanning 'glsa-check -l'";
+    } else {
+        // Parse affected output
+        std::set<std::string> seen;
+        for (const auto& line : util::split(raw, '\n')) {
+            std::string t = util::trim(line);
+            if (t.size() < 9) continue;
+            std::string id = t.substr(0, 9);
+            if (!looks_like_glsa_id(id)) continue;
+            if (seen.insert(id).second) ids.push_back(id);
+        }
     }
 
-    std::set<std::string> seen;
-    for (const auto& line : util::split(raw, '\n')) {
-        std::string t = util::trim(line);
-        if (t.size() < 9) continue;
-        std::string id = t.substr(0, 9);
-        if (!looks_like_glsa_id(id)) continue;
-        if (seen.insert(id).second) ids.push_back(id);
-    }
-
-    // Bound the number of follow-up HTTP requests.
+    // Limit HTTP requests
     if (ids.size() > 40) ids.resize(40);
     return ids;
 }
@@ -84,7 +113,7 @@ Advisory GlsaScanner::fetch_details(const std::string& id) {
     Advisory a;
     a.id = "GLSA-" + id;
     a.source = "GLSA";
-    a.verified = true;   // glsa-check already decided this applies
+    a.verified = true;
     a.url = std::string(kGlsaBase) + id;
 
     std::string err;
@@ -97,7 +126,6 @@ Advisory GlsaScanner::fetch_details(const std::string& id) {
 
     std::string text = util::collapse_ws(util::html_unescape(util::strip_tags(html)));
 
-    // Title: prefer the advisory heading, else the first sentence-ish chunk.
     std::regex h1(R"(GLSA\s+\d{6}-\d{2}\s*:\s*([^.]{3,120}))");
     std::smatch m;
     if (std::regex_search(text, m, h1)) {
@@ -106,7 +134,6 @@ Advisory GlsaScanner::fetch_details(const std::string& id) {
         a.title = "GLSA " + id;
     }
 
-    // CVE identifiers give the comment generator real grounding material.
     std::set<std::string> cves;
     std::regex cve_re("CVE-[0-9]{4}-[0-9]{4,}", std::regex::icase);
     for (std::sregex_iterator it(text.begin(), text.end(), cve_re), end; it != end; ++it) {
@@ -128,6 +155,11 @@ Advisory GlsaScanner::fetch_details(const std::string& id) {
 std::vector<Advisory> GlsaScanner::collect(std::string* note) {
     std::vector<Advisory> out;
     std::vector<std::string> ids = affected_ids(note);
+    
+    if (ids.empty() && note) {
+        *note += " | No GLSAs currently affecting this system (which is good!).";
+    }
+    
     for (const auto& id : ids) {
         out.push_back(fetch_details(id));
     }
